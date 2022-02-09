@@ -1,15 +1,27 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jv <jv@student.42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/02/08 23:44:33 by jv                #+#    #+#             */
+/*   Updated: 2022/02/08 23:47:11 by jv               ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-void ft_rev_int_tab(int *tab, int size) {
-  int ini;
-  int tmp;
+void	ft_rev_int_tab(int *tab, int size)
+{
+	int	ini;
+	int	tmp;
 
-  ini = 0;
-  while (ini < size)
-  {
-    tmp = tab[size - 1];
-    tab[size - 1] = tab[ini]; 
-    tab[ini] = tmp; 
-    ini++;
-    size--;
-  }
+	ini = 0;
+	while (ini < size)
+	{
+		tmp = tab[size - 1];
+		tab[size - 1] = tab[ini];
+		tab[ini] = tmp;
+		ini++;
+		size--;
+	}
 }
